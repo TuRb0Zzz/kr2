@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <ctime>
 #include "arraywork.h"
 using namespace std;
 int isSort (int* ar,int size){
