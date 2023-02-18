@@ -8,6 +8,7 @@ using namespace std;
 int main(){
         int step = 100;
         bool flag1 = 1 , flag2 = 1, flag3 = 1 , flag4 = 1, flag5 = 1 , flag6 = 1;
+        cout << "  bubbleSort  "<<"  selectionSort  "<<"  countsort  "<< "  quickSort  "<<"  insertionSort  "<< "  mergeSort"<<endl;
         for(int arsize = 100; arsize <= 10000000; arsize += step){
             if (arsize == 500){
 
