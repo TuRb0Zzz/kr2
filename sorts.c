@@ -75,13 +75,9 @@ static void merge(int* ar, int size, int central) {
     while (left < central && right < size) {
         while(ar[left] <= ar[right] && left < central) {
             arTemp[indexTemp++] = ar[left++];
-//            left++;
-//            indexTemp++;
         }
         while(ar[left] > ar[right] && right < size) {
-            arTemp[indexTemp] = ar[right];
-            indexTemp++;
-            right++;
+            arTemp[indexTemp++] = ar[right++];
         }
     }
 
