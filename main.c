@@ -9,8 +9,7 @@ using namespace std;
 
 int main(){
         int step = 100;
-        bool flag1 = 1 , flag2 = 1, flag3 = 1 , flag4 = 1, flag5 = 1 , flag6 = 1;	много раз просил так не делать!!!!
-											что это за переменные такие??? можно было объявить массив!!!
+        bool flag1 = 1 , flag2 = 1, flag3 = 1 , flag4 = 1, flag5 = 1 , flag6 = 1;
         cout << "  bubbleSort  "<<"  selectionSort  "<<"  countsort  "<< "  quickSort  "<<"  insertionSort  "<< "  mergeSort"<<endl;	пробелы!!!
             std::chrono::time_point<std::chrono::high_resolution_clock> start;
             std::chrono::time_point<std::chrono::high_resolution_clock> end;
@@ -20,9 +19,7 @@ int main(){
                 step = 250;
             }
             if (arsize == 1000){
-отличная пустая строчка.... только не понятно зачем она нужна
                 step=1000;
-ещё одна.... хмммм...
             }
             if (arsize == 10000){
                 step=5000;
@@ -56,20 +53,6 @@ int main(){
             else {
                     cout << "-----" << "\t";
             }
-
-	здесь надо опять заполнять массив рандомными значениями....
-как думаешь можно ли всё что ты написал превратить в некоторый цикл???
-	1.	выделяем память	
-	2. 	рандомно заполняем массив
-	3.	"запускаем" таймер
-	4.	вызываем нужную сортировку
-	5.	измеряем прошедшее время и выводим на экран (если время сортировки больше 60, исключаем эту сортировку из работы)
-	6.	повторяем с пункта 2
-	7.	освобождаем память задаём новый размер и начинаем с 1ого пункта 
-
-
-
-
             if ( flag2 == 1){
                 start = chrono::high_resolution_clock::now();
                 selectionSort(ar,arsize);
